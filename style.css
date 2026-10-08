@@ -1,0 +1,268 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    background: #111;
+    border-bottom: 1px solid #292929;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ff3c00;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff3c00;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #ff3c00;
+    padding: 9px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(90deg, #080808 20%, rgba(8,8,8,0.65), #080808),
+        radial-gradient(circle at 75% 50%, #6b1800, #080808 55%);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #ff3c00;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 85px);
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #ff3c00;
+}
+
+.hero p {
+    color: #bbb;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.play-btn {
+    display: inline-block;
+    background: #ff3c00;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    background: #ff5a25;
+    transform: scale(1.05);
+}
+
+/* GAMES */
+
+.games-section {
+    padding: 80px 7%;
+}
+
+.games-section h2,
+.about h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: min(500px, 90%);
+    padding: 15px;
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background: #141414;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #ff3c00;
+}
+
+.game-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.racing {
+    background: linear-gradient(135deg, #171717, #6b1800);
+}
+
+.space {
+    background: linear-gradient(135deg, #050520, #29105c);
+}
+
+.football {
+    background: linear-gradient(135deg, #052b0a, #08751b);
+}
+
+.adventure {
+    background: linear-gradient(135deg, #301b05, #7c4200);
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.game-info p {
+    color: #aaa;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.game-info button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ff3c00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-info button:hover {
+    background: #ff5a25;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 80px 10%;
+    background: #111;
+    text-align: center;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #050505;
+    color: #777;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+```

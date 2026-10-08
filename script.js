@@ -1,4 +1,4 @@
-```javascript
+javascript
 const searchInput = document.getElementById("searchInput");
 const gameCards = document.querySelectorAll(".game-card");
 
